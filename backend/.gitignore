@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Environment variables & secrets
+.env
+.env.*
+!.env.example
+secrets/firebase-service-account.json
+secrets/*.json
+!secrets/README.md
+
+# Build outputs
+dist/
+
+# Logs
+*.log
+logs/

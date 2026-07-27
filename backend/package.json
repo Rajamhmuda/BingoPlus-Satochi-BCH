@@ -1,0 +1,34 @@
+{
+  "name": "bingoplus-satoshi-backend",
+  "version": "1.0.0",
+  "description": "Backend API for BingoPlus Satoshi Blockchain Social Casino",
+  "main": "dist/http/app.js",
+  "scripts": {
+    "build": "node node_modules/typescript/bin/tsc",
+    "start": "node dist/http/app.js",
+    "dev": "tsx watch src/http/app.ts",
+    "typecheck": "node node_modules/typescript/bin/tsc --noEmit",
+    "seed:admin": "tsx src/scripts/seed-admin.ts",
+    "generate:house-wallet": "tsx src/scripts/generate-house-wallet.ts"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.1.0",
+    "dotenv": "^16.4.5",
+    "firebase-admin": "^12.1.0",
+    "zod": "^3.23.8",
+    "bchaddrjs": "^0.5.2",
+    "wif": "^2.0.6",
+    "bs58check": "^3.0.1",
+    "cashscript": "^0.10.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/cors": "^2.8.17",
+    "@types/node": "^20.12.12",
+    "@types/wif": "^2.0.5",
+    "tsx": "^4.11.0",
+    "typescript": "^5.4.5"
+  }
+}
